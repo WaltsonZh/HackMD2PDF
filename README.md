@@ -21,6 +21,7 @@
 Download a markdown viewer plugin for your browser.
 
 Chrome: [MD Reader](https://chromewebstore.google.com/detail/md-reader/medapdbncneneejhbgcjceippjlfkmkg) (Recommended)
+
 Firefox: [Markdown Viewer](https://addons.mozilla.org/firefox/addon/markdown-viewer-chrome/) (Recommended)
 
 ### 2. Environment Setup
