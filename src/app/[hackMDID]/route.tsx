@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 export const GET = async (_request: Request, { params }: { params: { hackMDID: string } }) => {
   try {
     const { hackMDID } = params
