@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# HackMD To PDF
 
-## Getting Started
+## Table of Content
 
-First, run the development server:
+- [HackMD To PDF](#HackMD-To-PDF)
+  - [Table of Content](#Table-of-Content)
+  - [How to Use](#How-to-Use)
+    - [1. Brower Setup](#1-Browser-Setup)
+    - [2. Environment Setup](#2-Environment-Setup)
+    - [3. Start Local Server](#3-Start-Local-Server)
+    - [4. Enter HackMD ID](#4-Enter-HackMD-ID)
 
-```bash
+---
+
+## How to Use
+
+### 1. Browser Setup
+
+> Chrome Recommended!
+
+Download a markdown viewer plugin for your browser.
+
+Chrome: [MD Reader](https://chromewebstore.google.com/detail/md-reader/medapdbncneneejhbgcjceippjlfkmkg) (Recommended)
+Firefox: [Markdown Viewer](https://addons.mozilla.org/firefox/addon/markdown-viewer-chrome/) (Recommended)
+
+### 2. Environment Setup
+
+Download or upgrade [Node.js](https://nodejs.org) to **v20.11.0**, npm and npx to **v10.1.0**.
+
+Download the code.
+
+Create a copy of `.env.sample` and name it as `.env`.
+
+![env](https://hackmd.io/_uploads/SJXJCpfFa.png)
+
+Create your [HackMD API Key](https://hackmd.io/settings#api).
+
+Copy your key to `.env` file.
+
+![HackMDAPI](https://hackmd.io/_uploads/rkCeyAzY6.png)
+
+### 3. Start Local Server
+
+Run the commands bellow to start the server.
+
+```
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Which the result should look something like this : 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![result](https://hackmd.io/_uploads/rkCffI9YT.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Go to your localhost server (http://localhost:3000).
 
-## Learn More
+### 4. Enter HackMD ID
 
-To learn more about Next.js, take a look at the following resources:
+HackMD ID is the last section of the URL.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+https://hackmd.io/9Fe7huR5QCG_jTG_baWVWw
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+In this case the ID is `9Fe7huR5QCG_jTG_baWVWw`
 
-## Deploy on Vercel
+```
+https://hackmd.io/@waltson/H1rSNYAd6
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+In this case the ID is `H1rSNYAd6`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Copy the ID and paste in the input section.
+
+![submit](https://hackmd.io/_uploads/SkjFz85tp.png)
+
+After hitting the submit button, the result will be shown in a new tab, the markdown viewer plugin should styled markdown content instead of showing raw text, press `ctrl + p` to print the page, choose **Save as PDF**.
